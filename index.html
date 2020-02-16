@@ -40,11 +40,13 @@
                         <a class="nav-item nav-link page-scroll" href="#education">Education</a>
                         <a class="nav-item nav-link  page-scroll" href="#organization">Organization</a>
                         <a class="nav-item nav-link  page-scroll" href="#skill">Skill</a>
-                        <a class="btn btn-primary tombol nav-link page-scroll" id="statismodal" name="statismodal"
-                            type="button" active>
-                            Evaluate Me!
-                            <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
-                        </a>
+
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary tombol" data-toggle="modal"
+                            data-target="#staticBackdrop">
+                            Evaluate Me! <span class="spinner-grow spinner-grow-sm" role="status"
+                                aria-hidden="true"></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -86,8 +88,7 @@
                     <a href="http://www.freefiremobile.com"><i class=" fas fa-fw fa-gamepad"></i> UGM•KhiDzツ</a>
                 </div>
                 <div class="col-md-5">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus molestiae ea rerum
-                    exercitationem id tempora voluptas porro ipsa illo itaque! holaaa
+                    Nothing to say
                 </div>
             </div>
         </div>
@@ -146,7 +147,7 @@
     <!-- akhir education -->
 
     <!-- organization -->
-    <!-- <section class="organization" id="organization">
+    <section class="organization" id="organization">
         <div class="container">
             <div class="row mb-2 mt-2">
                 <div class="col-md-12 text-center">
@@ -154,14 +155,24 @@
                     <hr>
                 </div>
             </div>
-            <div class="row ">
-                <div class="col">
-
-
+            <div class="row justify-content-center ">
+                <div class="col-md-7">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            Do you want to know?
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text"> Click button below!
+                            </p>
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#prankModal">Go!
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!-- akhir organization -->
 
     <!-- skill -->
@@ -207,8 +218,55 @@
         </div>
     </section> -->
     <!-- akhir Testimonial -->
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Evaluate form</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    this is static web, your input may be send in google form.
+                    <br>
+                    Are you sure to continue?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <a type="button" class="btn btn-primary" href="http://www.google.com">Yes</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- prank Modal -->
+    <div class="modal fade" id="prankModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true" data-target="prankModal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header alert-warning">
+                    <h5 class="modal-title" id="prankModal">Warning!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Under construction :)
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script>
+        alert('masih dalam pengembangan:)')
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <!-- Optional JavaScript -->
