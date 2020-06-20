@@ -12,7 +12,14 @@ $('.page-scroll').on('click', function (e) {
     }, 1000, 'easeInOutExpo');
     e.preventDefault();
 
+
+
+
 });
+
+// AOS instance
+AOS.init();
+
 
 // paralax
 // $(window).scroll(function () {
